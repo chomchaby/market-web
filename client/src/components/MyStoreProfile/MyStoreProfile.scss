@@ -1,0 +1,49 @@
+.myStoreProfile{
+    display: flex;
+    padding: 20px 200px;
+    gap: 90px;
+    .left{
+        // display: flex;
+        // flex-basis: 200px;
+        .mainImg{
+            img{
+                width: 240px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                // overflow: hidden;
+                // width: 100%;
+                // max-height: 800px;
+                object-fit: cover;
+            }
+        }
+    }
+    .right{
+        // flex-grow: 1;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .name{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                font-size: 42px;
+                font-weight: 300;
+                .editIcon{
+                    transform: scale(1.2);
+                    cursor: pointer;
+                }
+            }
+            .desc{
+                margin-top:20px;
+                .show{
+                    color: gray;
+                }
+            }
+            .button{
+                margin-top:50px
+            }
+        }
+    }
+
+}

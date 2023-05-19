@@ -1,0 +1,91 @@
+.cart{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 56%;
+        h1{
+            margin-bottom: 20px;
+            text-transform: capitalize;
+        }
+        .item{
+            padding: 10px 30px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 10px;
+
+            .checkbox{
+                color: #2879fe;
+                cursor: pointer;
+            }
+    
+            img{
+                width: 80px;
+                height: 100px;
+                object-fit: cover;
+                cursor: pointer;
+            }
+    
+            .details{
+                h1{
+                    font-size: 18px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+    
+                p{
+                    color: rgb(109, 109, 109);
+                    margin-bottom: 10px;
+                }
+    
+                .price{
+                    color: #2879fe;
+                }
+            }
+    
+            .delete{
+                color: rgb(205, 37, 37);
+                font-size: 30px;
+                cursor: pointer;
+                margin-left: auto;
+            }
+        }
+        .selected {
+            background-color: rgb(230, 227, 223);
+        }
+    
+        .total{
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            font-weight: 500;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    
+        button{
+            width: 250px;
+            padding: 10px;
+            background-color: #2879fe;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            font-weight: 500;
+        }
+    
+        .reset{
+            color: red;
+            font-size: 12px;
+            cursor: pointer;
+        }
+    }
+
+}

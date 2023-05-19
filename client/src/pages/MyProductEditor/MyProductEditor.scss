@@ -1,0 +1,195 @@
+.myProductEditor{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        gap: 10px;
+
+        .resmsg {
+            background-color: lightpink;
+            color: firebrick;
+            font-weight: bold;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .offscreen{
+            position: absolute;
+            left: -9999px;
+        }
+
+        h1{
+            margin-bottom: 30px;
+        }
+
+        .edit-form{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            .general-info-editor{
+
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                .name-input{
+                    display: flex;
+                    gap:10px;
+                    input{
+                        width: 360px;
+                    }
+                }
+                .category-input{
+                    display: flex;
+                    gap: 35px;
+                    input{
+                        width: 400px;
+                    }
+                }
+        
+                .desc-input{
+                    display: flex;
+                    gap: 30px;
+                    textarea{
+                        width: 500px;
+                    }
+                }
+    
+            }
+    
+            .subproduct-editor{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+    
+                .subproduct-table, .subproduct-form{
+                 
+                    table {
+                        table-layout: fixed;
+                        width: 100%;
+                        thead tr{
+                            .th-variation{
+                                width: 45%;
+                            }
+                            .th-price{
+                                width: 20%;
+                            }
+                            .th-stock{
+                                width: 20%;
+                            }
+                            .th-action{
+                                width: 15%;
+                            }
+                        }
+                        tbody tr td{
+                            white-space: pre-wrap;
+                            word-wrap:break-word;
+                            input{
+                                width:95%
+                            }
+                            .btn{
+                                display: flex;
+                                justify-content: space-evenly;
+                                cursor: pointer;
+                            }
+                        }
+    
+                    }
+                    
+                    
+                    p{
+                        color: red;
+                    }
+    
+                }
+            }
+    
+    
+            .image-editor{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .image-form, .image-table{
+    
+                    table {
+                        table-layout: fixed;
+                        width: 100%;
+                        thead tr{
+                            .th-default{
+                                width: 10%;
+                            }
+                            .th-title{
+                                width: 25%;
+                            }
+                            .th-url{
+                                width: 55%;
+                            }
+                            .th-action{
+                                width: 10%;
+                            }
+                        }
+                        tbody tr td{
+                            white-space: pre-wrap;
+                            word-wrap:break-word;
+                            input{
+                                width:95%;
+                            }
+                            .btn{
+                                display: flex;
+                                justify-content: space-evenly;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+    
+                    p{
+                        color: red;
+                    }
+    
+                }
+                
+                .preview-image-container{
+                    .preview-image{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 10px;
+                        img{
+                            width: 41%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .default-image-selector{
+                    display: flex;
+                    gap: 30px;
+                    select{
+                        min-width: 100px;
+                    }
+                }
+            }
+
+            .submit{
+                .btns{
+                    display: flex;
+                    gap: 50px;
+                    justify-content: center;
+                    button{
+                        width: 180px;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    
+}

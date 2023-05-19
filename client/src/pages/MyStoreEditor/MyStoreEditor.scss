@@ -1,0 +1,109 @@
+.myStoreEditor{
+    min-height: 100vh;
+    .container{
+        margin: 30px 60px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    .left{
+        // flex: 1;
+        display: flex;
+        margin-top: 50px;
+        .mainImg{
+            img{
+                width: 300px;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                overflow: "hidden";
+                // width: 100%;
+                // max-height: 800px;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .right{
+        // flex:1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 560px;
+
+        .errmsg {
+            background-color: lightpink;
+            color: firebrick;
+            font-weight: bold;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .offscreen{
+            position: absolute;
+            left: -9999px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            flex-grow: 1;
+            padding-bottom: 1rem;
+    
+            label {
+                margin-top : 1rem;
+                
+                .hide {
+                    display: none;
+                }
+                .invalid {
+                    color: red;
+                    margin-left: 0.25rem;
+                }
+
+            }
+    
+            input, textarea{
+                font-family: 'Nunito', sans-serif;
+                font-size: 20px;
+                padding: 0.25rem;
+                border-radius: 0.5rem;
+            }
+
+            .instructions {
+                font-size: 0.75rem;
+                border-radius: 0.5rem;
+                background: #000;
+                color: #fff;
+                padding: 0.25rem;
+                position: relative;
+                bottom: -10px;
+                
+            }
+            .instructions > svg {
+                margin-right: 0.25rem;
+            }
+            .offscreen {
+                position: absolute;
+                left: -9999px;
+            }
+
+            .submit-btn{
+                display: flex;
+                gap: 30px;
+
+                button{
+                    margin-top: 2rem;
+                    padding: 0.5rem;
+                    font-family: 'Nunito', sans-serif;
+                    font-size: 20px;
+                    border-radius: 0.5rem;
+                    cursor: pointer;
+                    width: 180px;
+                }
+            }
+        }
+    
+    }
+    }
+    
+}
